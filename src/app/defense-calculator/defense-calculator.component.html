@@ -1,0 +1,5 @@
+<h2>PvP Defense BP Calculator</h2>
+<input type="text" [(ngModel)]="totalPoints" placeholder="Insert total BP here"><br>
+<input type="checkbox" name="Sachi" id="sachi" [(ngModel)]="checked"><label for="Sachi">Team has Sachi</label><br>
+<button class="btn btn-success" (click)="calculate(checked)">Calculate</button><br>
+<input type="text" [value]="individualPoints" placeholder="Average BP" disabled>
