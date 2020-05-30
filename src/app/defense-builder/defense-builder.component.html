@@ -1,1 +1,17 @@
-<p>defense-builder works!</p>
+<h2>Defense Builder</h2>
+<mat-grid-list cols="9" rowHeight="1:1.5">
+    <mat-grid-tile [id]="hero.name" class="hero" *ngFor="let hero of heroes; index as i" (click)="addHero($event, i)">
+        {{ hero.name }}
+    </mat-grid-tile>
+</mat-grid-list>
+<br>
+<mat-grid-list class="col-md-6" cols="4" rowHeight="1:1.5">
+    <mat-grid-tile id="0" class="hero" (click)="removeHero($event)"></mat-grid-tile>
+    <mat-grid-tile id="1" class="hero" (click)="removeHero($event)"></mat-grid-tile>
+    <mat-grid-tile id="2" class="hero" (click)="removeHero($event)"></mat-grid-tile>
+    <mat-grid-tile id="3" class="hero" (click)="removeHero($event)"></mat-grid-tile>
+    <mat-grid-tile id="4" class="hero" (click)="removeHero($event)"></mat-grid-tile>
+    <mat-grid-tile id="5" class="hero" (click)="removeHero($event)"></mat-grid-tile>
+    <mat-grid-tile id="6" class="hero" (click)="removeHero($event)"></mat-grid-tile>
+    <mat-grid-tile id="7" class="hero" (click)="removeHero($event)"></mat-grid-tile>
+</mat-grid-list>

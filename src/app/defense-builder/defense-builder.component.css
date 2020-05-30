@@ -1,0 +1,8 @@
+.hero {
+    border: 1px solid black;
+}
+
+.disabled {
+    pointer-events: none;
+    color: gray;
+}
