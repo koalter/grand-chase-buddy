@@ -5,6 +5,10 @@
     </mat-grid-tile>
 </mat-grid-list>
 <br>
+<div>
+    <label class="col-sm-2"><input type="radio" name="Select" value="remove" checked> Remove</label>
+    <label class="col-sm-2"><input type="radio" name="Select" value="hide"> Hide</label>
+</div>
 <mat-grid-list class="col-md-6" cols="4" rowHeight="1:1.5">
     <mat-grid-tile id="0" class="hero" (click)="removeHero($event)"></mat-grid-tile>
     <mat-grid-tile id="1" class="hero" (click)="removeHero($event)"></mat-grid-tile>
