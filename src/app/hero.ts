@@ -1,5 +1,6 @@
-export interface Hero {
+export class Hero {
   id: number;
   name: string;
-  status: string
+  status: string;
+  image: string
 }

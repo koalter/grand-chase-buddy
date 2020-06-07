@@ -10,9 +10,8 @@ import { DefenseBuilderComponent } from './defense-builder/defense-builder.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
-  { path: 'calculator', component: DefenseCalculatorComponent },
-  { path: 'builder', component: DefenseBuilderComponent },
-  { path: '', redirectTo: '/calculator', pathMatch: 'full' }
+  { path: '', component: DefenseCalculatorComponent },
+  { path: 'builder', component: DefenseBuilderComponent }
 ]
 
 @NgModule({

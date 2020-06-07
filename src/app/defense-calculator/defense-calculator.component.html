@@ -1,5 +1,24 @@
-<h2>PvP Defense BP Calculator</h2>
-<input type="text" [(ngModel)]="totalPoints" placeholder="Insert total BP here"><br>
-<input type="checkbox" name="Sachi" id="sachi" [(ngModel)]="checked"><label for="Sachi">Team has Sachi</label><br>
-<button class="btn btn-success" (click)="calculate(checked)">Calculate</button><br>
-<input type="text" [value]="individualPoints" placeholder="Average BP" disabled>
+<div class="form-signin">
+    <div class="text-center mb-4">
+      <!-- <img class="mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+      <h1 class="h3 mb-3 font-weight-normal">{{ this.title }}</h1>
+    </div>
+  
+    <div class="form-label-group">
+      <input type="number" id="totalPoints" class="form-control" [(ngModel)]="totalPoints" placeholder="{{ this.totalPointsPlaceholder }}" autofocus>
+      <label for="totalPoints">{{ this.totalPointsPlaceholder }}</label>
+    </div>
+  
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" name="Sachi" id="sachi" [(ngModel)]="checked"> Team has Sachi
+      </label>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" (click)="calculate(checked)">Calculate</button><br>
+
+    <div class="form-label-group">
+      <input type="text" id="individualPoints" class="form-control" [value]="individualPoints" placeholder="{{ this.individualPointsPlaceholder }}" disabled>
+      <label for="individualPoints">{{ this.individualPointsPlaceholder }}</label>
+    </div>
+</div>
